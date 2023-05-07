@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Inter&display=swap');
+
+.container{
+    max-width: 1920px;
+    width: 100%;
+    margin-inline: auto;
+}
+/* !Header */
+header{
+    width: 100%;
+    position: fixed;
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+    padding: 37px 12%;
+    background-color: rgba(213, 144, 110, 0.52);
+    backdrop-filter: blur(5px);
+}
+ul{
+    display: flex;
+    gap: 60px;
+}
+li a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 22px;
+    border-radius: 15px;
+}
+.active{
+    position: relative;
+    display: inline-block;
+    color: #D5906E;
+    transition: all .7s;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D5906E;
+    transition: width 0.7s;
+}
+.active:hover::before {
+    width: 100%;
+  }
+.notactive{
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: all .7s;
+}
+.notactive::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:white;
+    transition: width 0.7s;
+}
+.notactive:hover::before {
+    width: 100%;
+  }
+.notactive{
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: all .7s;
+}
+
+.active:hover{
+    background-color: white;
+    scale: 1.1;
+}
+.notactive:hover{
+    background-color: #D5906E;
+    scale: 1.1;
+}
+.logo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 44px;
+    color: white;
+    transition: all .7s;
+}
+.logo_span{
+    color: #D5906E;
+}
+.logo:hover{
+    scale: 1.1;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:#D5906E;
+    transition: width 0.7s;
+}
+.logo:hover::before {
+    width: 50%;
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color:white;
+    transition: width 0.7s;
+}
+.logo:hover::after {
+    width: 50%;
+}
+.sign_in{
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+.sign_in_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #FFFFFF;
+    border-radius: 35px;
+    transition: all .7s;
+}
+.fa-cart-shopping{
+     font-size: 1rem;
+     color: #FFFFFF;
+     transition: all .7s;
+}
+.sign_in_text:hover{
+    background-color: #D5906E;
+    scale: 1.1;
+}
+.sign_in_text::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:white;
+    border-radius: 35px;
+    transition: width 0.7s;
+}
+.sign_in_text:hover::before {
+    width: 100%;
+}
+.fa-cart-shopping:hover{
+    background-color: #D5906E;
+    scale: 1.1;
+}
+
