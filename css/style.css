@@ -8,11 +8,11 @@
 /* !Header */
 header{
     width: 100%;
+    height: 96px;
     position: fixed;
      display: flex;
     justify-content: space-between;
      align-items: center;
-    padding: 37px 12%;
     background-color: rgba(213, 144, 110, 0.52);
     backdrop-filter: blur(5px);
 }
@@ -236,14 +236,15 @@ li a{
     border: 2px solid #D5906E;
     background-color: transparent;
     border-radius: 10px;
+    transition: all .7s;
+}
+.btn_text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    cursor: pointer;
-    transition: all .7s;
 }
 .shop_now_btn:hover{
     scale: 1.1;
@@ -280,4 +281,84 @@ li a{
       transform: scale(1);
       opacity: 0.5;
     }
+}
+/* !Card Section */
+.card_section{
+    width: 100%;
+    height: 526px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.section1_cards{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    transition: all .7s;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.card_image_div{
+    position: relative;
+    overflow: hidden;
+}
+.card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B53B1B;
+}
+.card_hover{
+    width: 100%;
+    height: 190px;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    backdrop-filter: blur(1px);
+    transition: all 0.7s;
+}
+.card_hover:hover{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+ }
+.card_hover_text{
+    color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #D5906E;
+  transition: all 0.7s;
+ }
+.card_hover_text:hover {
+    scale: 1.05;
+    background-color: #ffffff;
+    color: #D5906E;
 }
