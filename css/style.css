@@ -7,11 +7,13 @@
 }
 /* !Header */
 header{
-    width: 100%;
+    max-width: inherit;
+    width: inherit;
     height: 96px;
     position: fixed;
-     display: flex;
-    justify-content: space-between;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
      align-items: center;
     background-color: rgba(213, 144, 110, 0.52);
     backdrop-filter: blur(5px);
@@ -185,7 +187,7 @@ li a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     line-height: 48px;
     color: #FFFFFF;
     animation: color-fade 7s linear infinite;
@@ -210,26 +212,19 @@ li a{
     text-align: center;
     color: #FFFFFF;
     animation: text-slide-in 1s ease-out forwards;
+    opacity: 0;
 }
 @keyframes text-slide-in {
     from {
-      opacity: 0;
-      transform: translateY(50%);
+        opacity: 0;
+        transform: translateY(50px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-  
-@keyframes writing-line {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-}
+
 .shop_now_btn{
     width: 311px;
     height: 56px;
@@ -237,8 +232,11 @@ li a{
     background-color: transparent;
     border-radius: 10px;
     transition: all .7s;
+    cursor: pointer;
 }
 .btn_text{
+    width: 100%;
+    height: 100%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -284,6 +282,7 @@ li a{
 }
 /* !Card Section */
 .card_section{
+    max-width: 1920px;
     width: 100%;
     height: 526px;
     display: flex;
@@ -294,30 +293,27 @@ li a{
 .section1_cards{
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
 }
 .card{
+    width: 25%;
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
     transition: all .7s;
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
 }
 .card:hover{
     transform: translateY(-15px);
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
-.card_image_div{
-    position: relative;
-    overflow: hidden;
-}
 .card_img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: relative;
 }
 .card_text{
     font-family: 'Inter';
@@ -327,38 +323,61 @@ li a{
     line-height: 22px;
     color: #B53B1B;
 }
-.card_hover{
+/* !img section */
+.img_section{
+    max-width: 1920px;
     width: 100%;
-    height: 190px;
-    border-radius: 70px;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
+    height: 922px;
+    margin-inline: auto;
+    background-color: #402101;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    opacity: 0;
-    backdrop-filter: blur(1px);
-    transition: all 0.7s;
+    padding-top: 96px;
+    gap: 40px;
 }
-.card_hover:hover{
-    opacity: 1;
-    display: flex;
+.img_section_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.images{
+    width: 100%;
+    height: 922px;
+    display: grid;
     justify-content: center;
- }
-.card_hover_text{
-    color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: #D5906E;
-  transition: all 0.7s;
- }
-.card_hover_text:hover {
-    scale: 1.05;
-    background-color: #ffffff;
-    color: #D5906E;
+    grid-template-columns: 315px 60px 315px 60px 440px;
+    grid-template-rows: 322px 60px 260px;
+    grid-template-areas: 
+        "figure1 figure1 figure1 . figure2"
+        ". . . . figure2"
+        "figure4 . figure5 . figure3";
+}
+
+.figure1{
+    width: 100%;
+    grid-area: figure1;
+}
+
+.figure2{
+    width: 100%;
+    grid-area: figure2;
+}
+
+.figure3{
+    width: 100%;
+    grid-area: figure3;
+}
+
+.figure4{
+    width: 100%;
+    grid-area: figure4;
+}
+
+.figure5{
+    width: 100%;
+    grid-area: figure5;
 }
