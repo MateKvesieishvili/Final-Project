@@ -17,6 +17,7 @@ header{
      align-items: center;
     background-color: rgba(213, 144, 110, 0.52);
     backdrop-filter: blur(5px);
+    overflow: hidden;
 }
 ul{
     display: flex;
@@ -233,6 +234,7 @@ li a{
     border-radius: 10px;
     transition: all .7s;
     cursor: pointer;
+    backdrop-filter: blur(1.5px);
 }
 .btn_text{
     width: 100%;
@@ -246,7 +248,6 @@ li a{
 }
 .shop_now_btn:hover{
     scale: 1.1;
-    backdrop-filter: blur(5px);
 }
 .shop_now_btn::before {
     content: '';
@@ -318,6 +319,7 @@ li a{
     align-items: center;
     padding-top: 96px;
     gap: 40px;
+    overflow-x: hidden;
 }
 .img_section_title{
     font-family: 'Inter';
@@ -328,8 +330,7 @@ li a{
     color: #FFFFFF;
 }
 .images{
-    width: 100%;
-    height: 922px;
+    width: 85%;
     display: grid;
     justify-content: center;
     grid-template-columns: 315px 60px 315px 60px 440px;
@@ -339,6 +340,7 @@ li a{
         ". . . . figure2"
         "figure4 . figure5 . figure3";
 }
+
 
 .figure1{
     width: 100%;
@@ -440,7 +442,6 @@ li a{
     opacity: 0;
     transition: opacity 0.3s ease-out;
 }
-  
 .arrow_btn:hover::before {
     opacity: 1;
 }
@@ -472,7 +473,7 @@ li a{
 }
 .latest_products_image:hover{
     transform: translateY(-15px);
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.1);
 }
 .price_tag{
     width: 88px;
@@ -489,6 +490,155 @@ li a{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.1875rem;
     color: #B53B1B;
 }
+/* !Subscribe */
+.subscribe_to_newsletter{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    background-image: url("../images/subscripe_background_img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.subscribe_to_newsletter_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.subscribe_div{
+    display: flex;
+}
+.subscripe_to_newsletter_input{
+    width: 331px;
+    height: 56px;
+    left: 0px;
+    top: 104px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 19px 19px;
+}
+.subscribe_submit{
+    width: 151px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 22px;
+    color: #402101;
+    cursor: pointer;
+}
+
+/* !what is artistry article */
+.what_is_artistry{
+    width: 100%;
+    height: 751px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.what_is_artistry_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 44px;
+    color: #402101;
+}
+.what_is_artistry_div{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.what_is_artistry_text_div{
+    width: 30%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    left: 1px;
+    top: 0px;
+    background: rgba(213, 144, 110, 0.3);
+    border-radius: 8px;
+}
+.artistry_text_div_title{
+    width: 100%;
+    height: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5rem;
+    color: #B53B1B;
+}
+.artistry_text_div_text{
+    width: 100%;
+    height: 75%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875rem;
+    color: #402101;
+}
+.what_is_artistry_question{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 112px;
+}
+.what_is_artistry_question_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #402101;
+}
+.help_center_btn{
+    width: 309px;
+    height: 56px;
+    background: #B53B1B;
+    border-radius: 10px;
+    padding: 14px 52px;
+    border: none;
+    cursor: pointer;
+    transition: all .7s;
+}
+.help_center_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.help_center_btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.1);;
+}
+
