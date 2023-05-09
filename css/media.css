@@ -164,7 +164,7 @@
     nav{
         display: none;
     }
-    .header_logo{
+    .logo{
         font-size: 1.5rem !important;
     }
 }
@@ -198,7 +198,22 @@
         width: 70px !important;
     }
 }
+@media (max-width: 400px){
+    .banner_title{
+        font-size: 1.5rem !important;
+    }
+    .artistry_text_div_title{
+        font-size: 1rem !important;
+    }
 
+    .artistry_text_div_text{
+        line-height: 10px;
+        font-size: .7rem !important; 
+    }
+    .help_center_text{
+        font-size: 1rem !important;
+    }
+}
 
 
   
