@@ -1,3 +1,8 @@
+@media (max-width: 1920px) {
+    header {
+        width: 100%;
+    }
+}
 @media (max-width: 1790px) {
     .latest_products_images {
         display: flex;
@@ -159,6 +164,9 @@
     nav{
         display: none;
     }
+    .header_logo{
+        font-size: 1.5rem !important;
+    }
 }
 @media (max-width: 750px){
     .banner_section_div{
@@ -179,6 +187,15 @@
     .shop_now_btn{
         width: 160px !important;
         height: 48px !important;
+    }
+    .subscribe_to_newsletter_title{
+        font-size: 1.5rem !important;
+    }
+    .subscripe_to_newsletter_input{
+        width: 140px !important;
+    }
+    .subscribe_submit{
+        width: 70px !important;
     }
 }
 

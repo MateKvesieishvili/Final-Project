@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Inter&display=swap');
-
 .container{
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
 }
 /* !Header */
-header{
+header {
     max-width: inherit;
     width: inherit;
     height: 96px;
     position: fixed;
     z-index: 100;
     display: flex;
-    justify-content: space-around;
-     align-items: center;
+    align-items: center;
     background-color: rgba(213, 144, 110, 0.52);
     backdrop-filter: blur(5px);
+}
+.header_main_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .fa-bars{
     display: none;
