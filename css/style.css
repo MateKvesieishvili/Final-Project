@@ -3,7 +3,7 @@
 .container{
     max-width: 1920px;
     width: 100%;
-    margin-inline: auto;
+    margin: 0 auto;
 }
 /* !Header */
 header{
@@ -17,7 +17,11 @@ header{
      align-items: center;
     background-color: rgba(213, 144, 110, 0.52);
     backdrop-filter: blur(5px);
-    overflow: hidden;
+}
+.fa-bars{
+    display: none;
+    color: white;
+    font-size: 24px;
 }
 ul{
     display: flex;
@@ -178,7 +182,7 @@ li a{
     gap: 72px;
 }
 .banner_section_div{
-    width: 38%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,21 +273,22 @@ li a{
 /* !Card Section */
 .card_section{
     width: 100%;
-    height: 526px;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: white;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
 }
 .section1_cards{
-    width: 50%;
+    width: 75%;
     display: flex;
-    gap: 60px;
     align-items: center;
-    justify-content: center;
+    gap: 60px;
+    justify-content: space-between;
 }
 .card{
-    width: 25%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -304,14 +309,14 @@ li a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 22px;
     color: #B53B1B;
+    text-align: center;
 }
 /* !img section */
 .img_section{
     width: 100%;
-    height: 922px;
     margin-inline: auto;
     background-color: #402101;
     display: flex;
@@ -320,6 +325,8 @@ li a{
     padding-top: 96px;
     gap: 40px;
     overflow-x: hidden;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .img_section_title{
     font-family: 'Inter';
@@ -329,7 +336,7 @@ li a{
     line-height: 48px;
     color: #FFFFFF;
 }
-.images{
+/* !.images{
     width: 85%;
     display: grid;
     justify-content: center;
@@ -340,7 +347,6 @@ li a{
         ". . . . figure2"
         "figure4 . figure5 . figure3";
 }
-
 
 .figure1{
     width: 100%;
@@ -363,17 +369,36 @@ li a{
 }
 
 .figure5{
-    width: 100%;
+        width: 100%;
     grid-area: figure5;
-}
+/* }  როდესაც გრიდი გამოვიყენე რესპონსივის წერის დროს რაც არ უნდა მეცადა ფოტოები არ იყრებოდა ქვევიტ, ამიტომ მომიწია flex ით აწყობა*/ 
+.img_section_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+  .images_div1{
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+  }
+  .images_div2{
+      display: flex;
+      gap: 60px;
+      margin-top: 60px;
+  }
 /* !Latest Products */
 .latest_products{
     width: 100%;
-    height: 668px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 160px;
+    margin-bottom: 160px;
     gap: 40px;
 }
 .latest_products_div{
@@ -452,7 +477,7 @@ li a{
     justify-content: space-between;
 }
 .latest_products_image{
-    width: 22%;
+    width: 315px;
     height: 260px;
     border-radius: 8px;
     transition: all .7s;
@@ -510,7 +535,7 @@ li a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
     color: #FFFFFF;
 }
@@ -551,11 +576,12 @@ li a{
 /* !what is artistry article */
 .what_is_artistry{
     width: 100%;
-    height: 751px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 160px;
+    margin-bottom: 160px;
     gap:40px;
 }
 .what_is_artistry_title{
@@ -567,15 +593,17 @@ li a{
     color: #402101;
 }
 .what_is_artistry_div{
-    width: 75%;
+    width: 76%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .what_is_artistry_text_div{
-    width: 30%;
-    height: 145px;
+    width: 439px;
+    height: 140px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 24px;
     left: 1px;
     top: 0px;
@@ -588,8 +616,8 @@ li a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 24px;
     color: #B53B1B;
 }
 .artistry_text_div_text{
@@ -598,12 +626,12 @@ li a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.1875rem;
     color: #402101;
 }
 .what_is_artistry_question{
-    width: 35%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -612,10 +640,11 @@ li a{
     margin-top: 112px;
 }
 .what_is_artistry_question_title{
+    text-align: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 29px;
     color: #402101;
 }
@@ -643,16 +672,20 @@ li a{
 }
 /* !Footer */
 footer{
-    width: 1920px;
-    height: 240px;
+    width: 100%;
     background: #402101;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 320px;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-
+.footer_main_div{
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .footer_ul{
     flex-direction: column;
     gap: 8px;
@@ -661,7 +694,7 @@ footer{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 22px;
     color: #FFFFFF;
 }
@@ -669,7 +702,7 @@ footer{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     color: #FFFFFF;
     transition: all .7s;
@@ -694,7 +727,7 @@ footer{
     gap: 30px;
 }
 .fa-brands{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
     transition: all .7s;
 }
@@ -715,6 +748,11 @@ footer{
     transform: translateY(-5px);
     text-shadow: 1px 10px 5px rgba(0, 0, 0, 0.1);
     color: orangered;
+}
+.footer_div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .footer_contact_ul{
     flex-direction: column;
