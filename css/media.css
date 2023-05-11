@@ -169,6 +169,14 @@
         justify-content: center;
     }
 }
+@media (max-width: 1000px){
+    .contact_banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+    }
+}
 @media (max-width: 820px){
     .fa-bars{
         display: block !important;
@@ -179,10 +187,23 @@
     .logo{
         font-size: 1.5rem !important;
     }
+    .contact_section_div2{
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 100% !important;
+    }
 }
 @media (max-width: 750px){
     .banner_section_div{
         width: 80% !important; 
+    }
+    .contact_section_title{
+        font-size: 2rem !important;
     }
 }
 @media (max-width: 555px){
@@ -209,6 +230,9 @@
     .subscribe_submit{
         width: 70px !important;
     }
+    .get_in_touch_div{
+        scale: .8;
+    }
 }
 @media (max-width: 400px){
     .banner_title{
@@ -228,8 +252,15 @@
     .what_is_artistry_title{
         font-size: 1.5rem !important;
     }
+    .get_in_touch_div{
+        scale: .7;
+    }
 }
-
+@media (max-width: 350px){
+    .get_in_touch_div{
+        scale: .6;
+    }
+}
 
   
   
