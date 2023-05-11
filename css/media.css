@@ -42,6 +42,18 @@
     }
     
 }
+@media (max-width: 1700px){
+    .category_section_cards{
+       gap: 10px;
+    }
+    .category_cards_row1, .category_cards_row2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 57px;
+    }
+}
 @media (max-width: 1570px) {
     .section1_cards{
         display: flex;

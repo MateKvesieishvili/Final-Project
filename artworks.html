@@ -5,38 +5,212 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="https://kit.fontawesome.com/b0fc90f268.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>Artworks</title>
 </head>
 
 
 <body>
     
 
-        <div class="container">
-            <!-- !Header -->
-            <header>
+    <div class="container">
+        <!-- !Header -->
+        <header>
+            <div class="header_main_div">
+                <i class="fa-solid fa-bars"></i>
                 <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html" class="home notactive">Home</a>
+                <ul class="header_ul">
+                    <li>
+                        <a href="index.html" class="home notactive">Home</a>
+                    </li>
+                    <li>
+                        <a href="artworks.html" class="artworks active">Artworks</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="contact notactive">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="index.html"><h2 class="logo_text logo header_logo">Earthly <span class="logo logo_span header_logo">Artisry</span></h2></a>
+            <div class="sign_in">
+                <a href="contact.html"><p class="sign_in_text">Sign In</p></a>
+                <a href="artworks.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            </div>
+        </header>
+
+        <!-- !Banner Section -->
+        <section class="artworks_banner_section">
+            <h3 class="banner_title">Find Something Beautiful</h3>
+            <button class="shop_now_btn"><a href="artworks.html" class="btn_text">Shop Now</a></button>
+        </section>
+        <!-- !Category Section -->
+        <section class="category_section">
+                <div class="shop_by_category">
+
+                        <div class="shop_by_category_div">
+                            <p class="shop_by_category_text">Shop By Category</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                        <form action="" class="shop_by_category_search_form">
+                            <div class="shop_by_category_search">
+                                <input type="search" class="shop_by_category_search_input" name="Search" id="search" placeholder="Search For  Anything">
+                                <button type="submit" class="shop_by_category_search_btn">Submit</button>
+                            </div>
+                        </form>
+
+                </div>
+                <div class="all_category_div">
+                    <h5 class="all_category_title">All Category</h5>
+                    <div class="sort_div">
+                        <p class="sort_text">Sort</p>
+                        <i class="fa-solid fa-arrow-down-up-across-line"></i>
+                    </div>
+                </div>
+                <div class="category_section_cards">
+                    <div class="category_cards_row1">
+
+                        <div class="category_card">
+                            <img src="images/category_card_img1.png" alt="" class="category_card_img">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="category_card">
+                            <img src="images/category_card_img2.png" alt="" class="category_card_img">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="category_card">
+                            <img src="images/category_card_img3.png" alt="" class="category_card_img">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="category_card">
+                            <img src="images/category_card_img4.png" alt="" class="category_card_img category_card_img_none">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="category_cards_row2">
+
+
+                        <div class="category_card"> 
+                            <img src="images/category_card_img5.png" alt="" class="category_card_img category_card_img_none">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="category_card">
+                            <img src="images/category_card_img6.png" alt="" class="category_card_img category_card_img_none">
+                            <p class="category_product_name">Product Name</p> 
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="category_card">
+                            <img src="images/category_card_img7.png" alt="" class="category_card_img category_card_img_none">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="category_card">
+                            <img src="images/category_card_img8.png" alt="" class="category_card_img category_card_img_none">
+                            <p class="category_product_name">Product Name</p>
+                            <div class="category_card_price_div">
+                                <p class="category_price_text">$40.00</p>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="category_pages_div">
+                    <div class="category_page_div notactive_page"><i class="fa-solid fa-angles-left"></i></div>
+                    <div class="category_page_div notactive_page">1</div>
+                    <div class="category_page_div notactive_page">2</div>
+                    <div class="category_page_div active_page">3</div>
+                    <div class="category_page_div notactive_page">4</div>
+                    <div class="category_page_div notactive_page">...</div>
+                    <div class="category_page_div notactive_page">17</div>
+                    <div class="category_page_div notactive_page"><i class="fa-solid fa-angles-right"></i></div>
+                </div>
+        </section>
+        <!-- !footer -->
+        <footer >
+
+            <div class="footer_main_div">
+                <div class="footer_div1">
+                    <ul class="footer_ul">
+                        <li class="footer_li footer_li1">
+                            <a href="contact.html" class="footer_a footer_a1 notactive">Help</a>
                         </li>
-                        <li>
-                            <a href="artworks.html" class="artworks active">Artworks</a>
+                        <li class="footer_li footer_li2">
+                            <a href="contact.html" class="footer_a footer_a2 notactive">Help Centre</a>
                         </li>
-                        <li>
-                            <a href="contact.html" class="contact notactive">Contact</a>
+                        <li class="footer_li footer_li3">
+                            <a href="contact.html" class="footer_a footer_a3 notactive">Privacy Settings</a>
                         </li>
                     </ul>
-                </nav>
-                <a href="index.html"><h2 class="logo_text logo">Earthly <span class="logo logo_span">Artisry</span></h2></a>
-                <div class="sign_in">
-                    <a href="contact.html"><p class="sign_in_text">Sign In</p></a>
-                    <a href="artworks.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class="footer_icons">
+                    <a href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
-            </header>
-        </div>
+
+                <a href="index.html"><h2 class="logo_text logo logo_footer">Earthly <span class="logo logo_span">Artisry</span></h2></a>
+
+                <div class="footer_div2">
+                    <ul class="footer_contact_ul">
+                        <li class="phone footer_contact_li notactive"><a href="tel:1234567890" class="phone footer_contact_a" target="_blank"><i class="fa-solid fa-phone"></i> +123 45 67  89</a> </li>
+                
+                        <li class="email footer_contact_li notactive" target="_blank"><i class="fa-solid fa-envelope"></i><a href="mailto:example@example.com" class="email footer_contact_a" target="_blank">example@example.com</a></li>
+                
+                
+                        <li class="location notactive footer_contact_li"><a href="
+                            https://www.google.com/maps/place/30+Shota+Rustaveli+Ave,+T'bilisi/data=!4m2!3m1!1s0x40440cdd1af7ece7:0xa0647da208fff81e?sa=X&ved=2ahUKEwiY3a63pub-AhUa_7sIHQLgAlsQ8gF6BAgIEAI" 
+                            class="location footer_contact_a" target="_blank"><i class="fa-solid fa-location-dot"></i>Rustaveli avenue, 30</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </div>
 </body>
 
 
