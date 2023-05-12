@@ -803,26 +803,22 @@ footer{
     gap: 72px;
 }
 .shop_by_category{
-    width: 49%;
+     width: 75%;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.shop_by_category{
-    width: 100%;
-    display: flex;
+    justify-content: space-between;
 }
 .shop_by_category_div{
-    width: 18%;
+    width: 15%;
     display: flex;
     align-items: center;
-    gap: 18px;
+    justify-content: space-between;
 }
 .shop_by_category_text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 22px;
     color: #402101;
 }
@@ -831,12 +827,19 @@ footer{
     color: #402101;
     cursor: pointer;
 }
+.shop_by_category_search_form{
+    width: 60%;
+
+}
 .shop_by_category_search{
+    width: 100%;
     display: flex;
 }
+
 .shop_by_category_search_input{
     width: 439px;
     height: 56px;
+    padding: 12px;
     background-color: transparent;
     border: 2px solid #402101;
     border-radius: 10px 0px 0px 10px;
@@ -845,7 +848,6 @@ footer{
     font-weight: 400;
     font-size: 1rem;
     line-height: 19px;
-
     color: rgba(64, 33, 1, 0.52);
 }
 .shop_by_category_search_btn{
@@ -928,12 +930,12 @@ footer{
 .category_cards_row1, .category_cards_row2{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .category_card{
-    width: 22%;
-    height: 360px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -977,10 +979,14 @@ footer{
     box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.1);
 }
 .category_pages_div{
+    max-width: 447px;
     width: 23%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     margin-top: 60px;
+    align-self: center;
+    justify-self: center;
 }
 .category_page_div{
     width: 56px;

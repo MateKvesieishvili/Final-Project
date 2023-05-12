@@ -10,12 +10,12 @@
         gap: 20px;
       }
       .latest_products_image{
-        display: flex;
-            flex-wrap: column;
-            align-items: center;
-            justify-content: center;
-          margin: 0 auto; 
-        max-width: 315px;
+            display: flex;
+                flex-wrap: column;
+                align-items: center;
+                justify-content: center;
+            margin: 0 auto; 
+            max-width: 315px;
       }
       .latest_products_image1, .latest_products_image2{
         order: 1;
@@ -53,6 +53,9 @@
         justify-content: center;
         padding-inline: 57px;
     }
+    .category_cards_row2, .category_card_notdisplay{
+        display: none !important;
+    }
 }
 @media (max-width: 1570px) {
     .section1_cards{
@@ -80,10 +83,19 @@
         width: 50% !important;
     }
     .banner_title{
-        font-size: 2rem !important; 
+        font-size: 1.5rem !important; 
     }
     .banner_text{
         font-size: 1rem !important;
+    }
+    .category_cards_row1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .category_card{
+        width: 360px;
     }
 }
 @media (max-width: 1382px) {
@@ -100,6 +112,9 @@
     }
     .banner_text{
         font-size: 10px;
+    }
+    .category_product_name, .category_price_text, .fa-cart-plus{
+       font-size: 1rem !important;
     }
 }
 @media (max-width: 1185px){
@@ -133,6 +148,9 @@
     width: 100%;
     height: 240px;
   }
+    .shop_by_category{
+        scale: .7;
+    }
 }
 @media (max-width: 1181px) {
     .img_section{
@@ -167,6 +185,9 @@
     .footer_ul {
         flex-direction: row;
         justify-content: center;
+    }
+    .category_pages_div{
+        scale: .8;
     }
 }
 @media (max-width: 1000px){
@@ -205,6 +226,12 @@
     .contact_section_title{
         font-size: 2rem !important;
     }
+    .category_pages_div {
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 555px){
     /* !აქ და არანარტი აქ, წინა მედიაზეც რატომღაც !important ის გარეშე არ ცვლიდა სტილს ბანერის სექციაში არსებულ საგნებზე და ტექსტებზე */
@@ -233,6 +260,18 @@
     .get_in_touch_div{
         scale: .8;
     }
+    .all_category_title{
+        font-size: 2rem !important;
+    }
+    .sort_div{
+        scale: .7;
+    }
+    .shop_by_category{
+        scale: .5;
+    }
+    .category_pages_div{
+        scale: .5;
+    }
 }
 @media (max-width: 400px){
     .banner_title{
@@ -255,6 +294,10 @@
     .get_in_touch_div{
         scale: .7;
     }
+    .all_category_title{
+        font-size: 1.1rem !important;
+    }
+
 }
 @media (max-width: 350px){
     .get_in_touch_div{
